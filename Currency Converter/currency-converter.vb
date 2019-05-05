@@ -34,6 +34,15 @@
     End Sub
 
     Private Sub BtnCalculate_Click(sender As Object, e As EventArgs) Handles btnCalculate.Click
-        MsgBox("For ammount of " & txtSUM.Text & " euro, you will get " & Format(Val(txtSUM.Text) / Rate, "### ###.00") & CurrencyType, 0, "Smart Donald Trump said...")
+        MsgBox("For the ammount of " & txtSUM.Text & " euro, you will get " & Format(Val(txtSUM.Text) / Rate, "### ###.00") & CurrencyType, 0, "Smart Donald Trump said...")
+    End Sub
+
+    Private Sub BtnExchangeRateChange_Click(sender As Object, e As EventArgs) Handles btnExchangeRateChange.Click
+        txtBGN.Enabled = True
+        txtBTC.Enabled = True
+        txtCHF.Enabled = True
+        txtETH.Enabled = True
+        txtGBP.Enabled = True
+        txtUSD.Enabled = True
     End Sub
 End Class
