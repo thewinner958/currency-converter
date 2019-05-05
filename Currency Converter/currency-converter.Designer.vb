@@ -37,9 +37,9 @@ Partial Class frmCurrency
         Me.txtCHF = New System.Windows.Forms.TextBox()
         Me.txtUSD = New System.Windows.Forms.TextBox()
         Me.txtGBP = New System.Windows.Forms.TextBox()
-        Me.btnChangeExchangeRate = New System.Windows.Forms.Button()
+        Me.btnExchangeRateChange = New System.Windows.Forms.Button()
         Me.lblSum = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtSUM = New System.Windows.Forms.TextBox()
         Me.btnCalculate = New System.Windows.Forms.Button()
         Me.grpCurrency.SuspendLayout()
         Me.grpEuro.SuspendLayout()
@@ -206,36 +206,36 @@ Partial Class frmCurrency
         Me.txtGBP.TabIndex = 0
         Me.txtGBP.Text = "1.17"
         '
-        'btnChangeExchangeRate
+        'btnExchangeRateChange
         '
-        Me.btnChangeExchangeRate.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.btnChangeExchangeRate.Location = New System.Drawing.Point(296, 20)
-        Me.btnChangeExchangeRate.Name = "btnChangeExchangeRate"
-        Me.btnChangeExchangeRate.Size = New System.Drawing.Size(100, 23)
-        Me.btnChangeExchangeRate.TabIndex = 3
-        Me.btnChangeExchangeRate.Text = "Exchange Rate"
-        Me.btnChangeExchangeRate.UseVisualStyleBackColor = True
+        Me.btnExchangeRateChange.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.btnExchangeRateChange.Location = New System.Drawing.Point(296, 20)
+        Me.btnExchangeRateChange.Name = "btnExchangeRateChange"
+        Me.btnExchangeRateChange.Size = New System.Drawing.Size(100, 23)
+        Me.btnExchangeRateChange.TabIndex = 3
+        Me.btnExchangeRateChange.Text = "Exchange Rate"
+        Me.btnExchangeRateChange.UseVisualStyleBackColor = True
         '
         'lblSum
         '
         Me.lblSum.AutoSize = True
         Me.lblSum.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblSum.Location = New System.Drawing.Point(34, 381)
+        Me.lblSum.Location = New System.Drawing.Point(34, 382)
         Me.lblSum.Name = "lblSum"
-        Me.lblSum.Size = New System.Drawing.Size(42, 16)
+        Me.lblSum.Size = New System.Drawing.Size(75, 16)
         Me.lblSum.TabIndex = 4
-        Me.lblSum.Text = "Sum:"
+        Me.lblSum.Text = "Ammount:"
         '
-        'TextBox1
+        'txtSUM
         '
-        Me.TextBox1.Location = New System.Drawing.Point(82, 381)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 5
+        Me.txtSUM.Location = New System.Drawing.Point(115, 381)
+        Me.txtSUM.Name = "txtSUM"
+        Me.txtSUM.Size = New System.Drawing.Size(100, 20)
+        Me.txtSUM.TabIndex = 5
         '
         'btnCalculate
         '
-        Me.btnCalculate.Location = New System.Drawing.Point(296, 378)
+        Me.btnCalculate.Location = New System.Drawing.Point(296, 379)
         Me.btnCalculate.Name = "btnCalculate"
         Me.btnCalculate.Size = New System.Drawing.Size(100, 23)
         Me.btnCalculate.TabIndex = 6
@@ -248,9 +248,9 @@ Partial Class frmCurrency
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(454, 450)
         Me.Controls.Add(Me.btnCalculate)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtSUM)
         Me.Controls.Add(Me.lblSum)
-        Me.Controls.Add(Me.btnChangeExchangeRate)
+        Me.Controls.Add(Me.btnExchangeRateChange)
         Me.Controls.Add(Me.grpEuro)
         Me.Controls.Add(Me.grpCurrency)
         Me.Controls.Add(Me.Label1)
@@ -281,8 +281,8 @@ Partial Class frmCurrency
     Friend WithEvents txtCHF As TextBox
     Friend WithEvents txtUSD As TextBox
     Friend WithEvents txtGBP As TextBox
-    Friend WithEvents btnChangeExchangeRate As Button
+    Friend WithEvents btnExchangeRateChange As Button
     Friend WithEvents lblSum As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtSUM As TextBox
     Friend WithEvents btnCalculate As Button
 End Class
